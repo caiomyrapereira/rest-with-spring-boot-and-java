@@ -26,7 +26,7 @@ public class PersonControlle {
     produces = APPLICATION_JSON_VALUE
     )
     public Person findIdPerson(
-            @PathVariable("id") String id
+            @PathVariable("id") Long id
     ){
         return service.findPerson(id);
     }
@@ -86,7 +86,7 @@ public class PersonControlle {
             method = RequestMethod.DELETE
     )
     public void putPersons(
-         @PathVariable("id") String id
+         @PathVariable("id") Long id
     ){
 
         service.deletePerson(id);

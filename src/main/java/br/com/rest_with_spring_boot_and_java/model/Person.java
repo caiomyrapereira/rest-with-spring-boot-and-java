@@ -15,6 +15,9 @@ public class Person implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    //@Version
+   // private Integer version;
+
     @Column(name="first_name", nullable = false , length = 80)
     private String firstName;
 
